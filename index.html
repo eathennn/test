@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+        }
+        .item{
+            width: 200px;
+            height: 200px;
+            border: 1px solid gray;
+            padding: 2px;
+        }
+        .delete2{
+            width: 200px;
+            height: 40px;
+            border-radius: 10px;
+            background: none ;
+            color: black;
+            border: 1px solid gray;
+            margin-top: 40px;
+            float: right;
+        }
+        .delete1{
+            width: 200px;
+            height: 40px;
+            border-radius: 10px;
+            background: none ;
+            color: black;
+            border: 1px solid gray;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>  
+    <button onclick="delete1()" class="delete1">delete1</button>
+    <button onclick="delete2()" class="delete2">Delete2</button>
+   
+   
+   <script>
+        // let item = document.querySelectorAll('.item')
+        // let button = document.querySelector('.delete1')
+        // let button2 = document.querySelector('.delete2')
+
+        // function delete2(){
+        //   item.forEach((element,index)=> {
+        //     if(index % 2 === 0){
+        //         element.style.cssText = "display:none"
+        //     }
+        //   });
+        // }
+        // function delete1(){
+        //   item.forEach((element,index)=> {
+        //     if(index % 2 === 1){
+        //         element.style.cssText = "display:none"
+        //     }
+        //   });
+        // }
+
+        let arr = [4,5,1,8,6,88,101,10,-8]
+        console.log(arr.sort(function( a , b){
+        if(a > b) return 1;
+        if(a < b) return -1;
+        return 0;
+}));
+
+
+    </script>
+</body>
+</html>
